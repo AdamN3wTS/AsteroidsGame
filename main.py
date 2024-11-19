@@ -12,6 +12,8 @@ def main():
     player1 = Player(x,y)
     screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
     dt =0 
+    my_group = pygame.sprite.Group()
+    Player.containers = (my_group)
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
